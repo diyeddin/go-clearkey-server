@@ -98,7 +98,7 @@ func loadEnvironment() error {
 	viper.SetDefault("Port", 8080)
 	viper.SetDefault("Ip", "0.0.0.0")
 	viper.SetDefault("ALLOWED_DOMAINS", []string{"http://localhost:*", "http://127.0.0.1:*"})
-	viper.SetDefault("Repository", "RAM")
+	viper.SetDefault("Repository", "PSQL")
 	viper.SetDefault("Psql_pass", "postgres")
 	viper.SetDefault("Psql_user", "postgres")
 	viper.SetDefault("Psql_addr", "127.0.0.1:5433")
