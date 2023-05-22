@@ -9,8 +9,9 @@ services:
       POSTGRES_PASSWORD: postgres
       POSTGRES_DB: postgres
     volumes:
-      - ./data/postgres:/data/postgres
-      - ./dumps:/tmp
+      - pgdata:/var/lib/postgresql/data/
     ports:
       - 5433:5432
     restart: always
+volumes:
+  pgdata:
